@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GOOGLE FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- Mis Estilos -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>SQL Documentacion</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <header class="header">
+                <h1>SQL<br>Documentación</h1>
+            </header>
+            <div class="content_nav">
+                <ul class="list_content">
+                    <li class="list_element">
+                        <a href="#Fundamentos" class="list_item">Fundamentos</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#DiagramaER" class="list_item">Diagramas Entidad Relación y Esquemas Relacionales</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#Ventajas" class="list_item">Ventajas del almacenamiento estrucutrado</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#Consecuencias" class="list_item">Consecuencia Directa de utilizar (A.E.)</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#diagrama_er"" class="list_item">Signficado Diagrama E.R.</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#tipos_relaciones" class="list_item">Tipos de Relaciones en el Diagrama E.R.</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#Fundamentos_normalizacion" class="list_item">Fundamentos de la normalización</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#primer_forma" class="list_item">Primera Forma</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#segunda_forma" class="list_item">Segunda Forma</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#tercer_forma" class="list_item">Tercer Forma</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#tipo_dato" class="list_item">Tipos de Datos</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                    <li class="list_element">
+                        <a href="#" class="list_item">List Item</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+
+            <div class="main_content">
+
+                <!-- Articulo 1 - Fundamentos -->
+
+                <div class="main_title" id="Fundamentos">
+                    <h2>Fundamentos (Evolución del software tipo DBMS)</h2>               
+                </div>
+                <div class="main_text">
+                    <p>Un sistema manejador de bases de datos (SGBD, por sus siglas en inglés) o DataBase Management System (DBMS) es una colección de software muy específico, orientado al manejo de base de datos, cuya función es servir de interfaz entre la base de datos, el usuario y las distintas aplicaciones utilizadas.</p>
+                    <div class="main_img_vertical">
+                        <img src="img/img1.jpg" alt="Imagen 1">
+                    </div> 
+                    <p>Un sistema SGBD es sinónimo de independencia, una redundancia mínima, consistencia de la información (control de la concurrencia), abstracción de la información sobre su almacenamiento físico, así como un acceso seguro y la adopción de las medidas necesarias para garantizar la integridad de los datos.
+                    </p>
+                    <p>Estas particularidades son algunos de los rasgos definitorios de un SGBD, cuyos procesos esenciales son la manipulación y construcción de las bases de datos, así como la definición de los mismos. Son características que, a su vez, facilitan el cumplimiento de una serie de funciones relacionadas con muchos de los aspectos apuntados, entre otros la definición de los datos, su fácil manipulación, una rápida gestión, poder representar relaciones complejas entre datos y otros aspectos relacionados con la seguridad y validez de los datos.
+                    </p>
+                    <p>En lo que respecta a los lenguajes utilizados en un DBMS, cabe destacar el Lenguaje de Manipulación de datos o <b>Data Manipulation Language (DML)</b> para la realización de consultas y manipulación de datos. Especialmente, se utiliza el SQL (Structured Query Language), el DML más utilizado para gestionar datos relacionales, así como el Data Definition Language (DDL), utilizado para definir estructuras y funciones en la realización de consultas. 
+                    </p>
+                    <p>El Data Control Language (DCL), por último, también es un lenguaje utilizado en un DBMS por el  administrador, en esta ocasión con el fin de controlar el acceso a los datos de la base de datos.
+                    </p>
+                    <div class="main_img_vertical">
+                        <img src="img/img2.jpg" alt="Imagen 2">
+                    </div> 
+                </div>
+
+                <!-- Articuo 2 - Diagrama ER -->
+
+                <div class="main_title" id="DiagramaER">
+                    <h2>Diagramas E-R y Esquemas Relacionales</h2>               
+                </div>
+                <div class="main_text">
+                    <p>Las bases de datos son un elemento fundamental en el entorno informático hoy en día y tienen aplicación en la práctica totalidad de campos. Concebidas con un propósito general, son de utilidad para toda disciplina o área de aplicación en la que exista una necesidad de gestionar datos, tanto más cuanto más voluminosos sean estos.</p>
+                    <div class="main_img_vertical">
+                        <img src="img/img3.jpg" alt="Imagen 3">
+                    </div>
+
+                    <!-- Articulo 3 - Ventajas de Utilizar almacenamiento estructurado -->
+                    
+                    <div class="main_subtitle" id="Ventajas">
+                        <h3>Ventajas de utilizar Almacenamiento Estructurado (A.E.)</h3> 
+                    </div>
+                    <p>Las ventajas de utilizar un almacenamiento estructurado (Bases de datos) se aprecian en diversos puntos, ya que afectan no solo a los datos sino también al propio uso que se hace de estos. Algunas ventajas que afectan directamente a los datos son las siguientes:</p>
+                    <ul class="main_list">
+                        <li>
+                            <b>Mayor Independencia: </b>Los datos son independientes de las aplicaciones que los usan, así como de los usuarios.</li>
+                        <li>
+                            <b>Mayor disponibilidad: </b>Se facilita el acceso a los datos desde contextos, aplicaciones y medios distintos, haciéndolos útiles para un mayor número de usuarios. 
+                        </li>
+                        <li>
+                            <b>Mayor seguridad (protección de los datos): </b>Por ejemplo, resulta más fácil replicar una base de datos para mantener una copia de seguridad que hacerlo con un conjunto de ficheros almacenados de forma no estructurada. Además, al estar centralizado el acceso a los datos, existe una verdadera sincronización de todo el trabajo que se haya podido hacer sobre estos (modificaciones), con lo que esa copia de seguridad servirá a todos los usuarios. 
+                        </li>
+                        <li>
+                            <b>Menor redundancia: </b>Un mismo dato no se encuentra almacenado en múltiples ficheros o con múltiples esquemas distintos, sino en una única instancia en la base de datos. Esto redunda en menor volumen de datos y mayor rapidez de acceso. 
+                        </li>
+                        <li>
+                            <b>Mayor eficiencia en la captura, codificación y entrada de datos</b>. 
+                        </li>
+                    </ul>
+
+                    <!-- Articulo 4 - Consecuencia Directa de utilizar A.E. -->
+                    <div class="main_subtitle mg_subtitle" id="Consecuencias">
+                        <h3>Consecuencia Directa de utilizar Almacenamiento Estructurado (A.E.)</h3>
+                    </div>
+                    <ul class="main_list">
+                        <li>
+                            <b>Mayor coherencia: </b>La mayor calidad de los datos que se deriva de su mejor gestión deriva en mayor calidad de los resultados.
+                        </li>
+                        <li>
+                            <b>Mayor eficiencia: </b>Facilitando el acceso a los datos y haciendo más sencilla su explotación, la obtención de resultados es más eficiente. 
+                        </li>
+                        <li>
+                            <b>Mayor valor informativo: </b>Resulta más sencillo extraer la información que los datos contienen, ya que uno de los cometidos de la base de datos es aumentar el valor de estos como fuente de información. 
+                        </li>
+                    </ul>
+                    <p class="mg_top">En función de la estructura utilizada para construir una base de datos, existen diversos modelos de bases de datos. El modelo de la base de datos define cómo se estructuran los datos y las relaciones entre estos. Las distintas operaciones sobre la base de datos (eliminación o sustitución de datos, lectura de datos, etc.) vienen condicionadas por esta estructura, y existen notables diferencias entre los principales modelos, cada uno de ellos con sus ventajas e inconvenientes particulares. Algunos de los más habituales son los siguientes:</p>
+                    <ul class="main_list">
+                        <li>Bases de datos jerárquicas.</li>
+                        <li>Bases de datos en red.</li>
+                        <li>Bases de datos relacionales.</li>
+                        <li>Bases de datos orientadas a objetos.</li>
+                    </ul>
+                </div>
+
+                <!-- Articulo 5 - Diagrama Entidad -->
+                <div class="main_title" id="diagrama_er">
+                    <h2>Diagrama Entidad Relación</h2>
+                </div>
+                <div class="main_text">
+                    <p>Un diagrama entidad-relación, también conocido como modelo entidad relación o ERD, es un tipo de diagrama de flujo que ilustra cómo las "entidades", como personas, objetos o conceptos, se relacionan entre sí dentro de un sistema. Los diagramas ER se usan a menudo para diseñar o depurar bases de datos relacionales en los campos de ingeniería de software, sistemas de información empresarial, educación e investigación. También conocidos como los ERD o modelos ER, emplean un conjunto definido de símbolos, tales como rectángulos, diamantes, óvalos y líneas de conexión para representar la interconexión de entidades, relaciones y sus atributos. Son un reflejo de la estructura gramatical y emplean entidades como sustantivos y relaciones como verbos.
+                    </p>
+                    <div class="main_img_vertical">
+                        <img src="img/img4.jpg" alt="Imagen 4">
+                        <p><b>Diagrama Entidad Relación</b></p>
+                    </div>
+                    <p class="mg_top">Los diagramas de ER se relacionan con los diagramas de estructura de datos (DSD), que se centran en las relaciones de los elementos dentro de las entidades, en lugar de las relaciones entre las entidades mismas. Los diagramas ER a menudo se combinan con los diagramas de flujo de datos (DFD), que trazan el flujo de la información para procesos o sistemas.
+                    </p>
+
+                    <!-- articulo 6 - Tipos de Relaciones -->
+                    <h3 class="main_subtitle" id="tipos_relaciones">Tipos de Relaciones</h3>
+                    <p>Existen relaciones de diferentes tipos. El tipo de relación que se utiliza al unir dos tablas dependerá de cómo estén definidos los campos relacionados.
+                    </p>
+                    <ul class="main_list">
+                        <li>
+                            <b>Relación de uno a uno (1,1): </b>Se creará una relación de este tipo si ambos campos relacionados son claves principales. En este tipo de relación, un registro de la tabla uno sólo puede estar relacionado con un único registro de la tabla dos y viceversa. No es muy usada.
+                        </li>
+                        <li>
+                            <b>Relación de uno a muchos (1,n): </b>Se crea una relación de uno a varios si uno de los campos relacionados es una clave principal. Esta relación es la más común. Cada registro de una tabla puede estar enlazado con varios registros de una segunda tabla, pero cada registro de la segunda sólo puede estar enlazado con un único registro de la primera.
+                        </li>
+                        <li>
+                            <b>Relación de muchos a muchos (n,m): </b>En este caso, ninguno de los campos relacionados son claves principales. Cada registro de la primera tabla puede estar enlazado con varios registros de la segunda y viceversa. Este tipo de relación implica la repetición de los campos de cada tabla. Para establecer relaciones de este tipo, es necesario crear una tabla intermedia que esté relacionada con las dos de uno a varios.
+                        </li>
+                    </ul>
+                    <div class="main_img_horizontal">
+                        <img src="img/img5.1.jpg" alt="Imagen 5.1">
+                        <img src="img/img5.2.jpg" alt="Imagen 5.2">
+                        <img src="img/img5.3.jpg" alt="Imagen 5.3">
+                    </div>
+                </div>
+
+                <!-- Articulo 7 - Fundamentos de Normalización -->
+                <div class="main_title" id="Fundamentos_normalizacion">
+                    <h2>Fundamentos de Normalización</h2>
+                </div>
+                <div class="main_text">
+                    <p>La normalización es el proceso de organizar los datos de una base de datos. Se incluye la creación de tablas y el establecimiento de relaciones entre ellas según reglas diseñadas tanto para proteger los datos como para hacer que la base de datos sea más flexible al eliminar la redundancia y las dependencias incoherentes.
+                    </p>
+                    <p>Los datos redundantes desperdician el espacio de disco y crean problemas de mantenimiento. Si hay que cambiar datos que existen en más de un lugar, se deben cambiar de la misma forma exactamente en todas sus ubicaciones. Un cambio en la dirección de un cliente es mucho más fácil de implementar si los datos sólo se almacenan en la tabla Clientes y no en algún otro lugar de la base de datos. 
+                    </p>
+                    <p>Mas Información en este Boton.</p>
+                    <a href="https://support.microsoft.com/es-mx/help/283878/description-of-the-database-normalization-basics
+                    " target="_blank" class="boton mg_bottom mg_top">Información</a>
+                    <p class="mg_top">Hay algunas reglas en la normalización de una base de datos. Cada regla se denomina una "forma normal". Si se cumple la primera regla, se dice que la base de datos está en la "primera forma normal". Si se cumplen las tres primeras reglas, la base de datos se considera que está en la "tercera forma normal". Aunque son posibles otros niveles de normalización, la tercera forma normal se considera el máximo nivel necesario para la mayor parte de las aplicaciones.</p>
+                    <p>Al igual que con otras muchas reglas y especificaciones formales, en los escenarios reales no siempre se cumplen los estándares de forma perfecta. En general, la normalización requiere tablas adicionales y algunos clientes consideran éste un trabajo considerable. Si decide infringir una de las tres primeras reglas de la normalización, asegúrese de que su aplicación se anticipa a los problemas que puedan aparecer, como la existencia de datos redundantes y de dependencias incoherentes.</p>
+                </div>
+
+                <div class="main_subtitle mg_top" id="primer_forma">
+                    <h3>Primera Forma Normal</h3>
+                </div>
+                <div class="main_text">
+                    <ul class="main_list">
+                        <li>
+                            Elimine los grupos repetidos de las tablas individuales.
+                        </li>
+                        <li>
+                            Cree una tabla independiente para cada conjunto de datos relacionados.
+                        </li>
+                        <li>
+                            Identifique cada conjunto de datos relacionados con una clave principal.
+                        </li>
+                    </ul>
+                    <p>No use varios campos en una sola tabla para almacenar datos similares. Por ejemplo, para realizar el seguimiento de un elemento del inventario que proviene de dos orígenes posibles, un registro del inventario puede contener campos para el Código de proveedor 1 y para el Código de proveedor 2.</p>
+                    <p>¿Qué ocurre cuando se agrega un tercer proveedor? Agregar un campo no es la respuesta, requiere modificaciones en las tablas y el programa, y no admite fácilmente un número variable de proveedores. En su lugar, coloque toda la información de los proveedores en una tabla independiente denominada Proveedores y después vincule el inventario a los proveedores con el número de elemento como clave, o los proveedores al inventario con el código de proveedor como clave.</p>
+                </div>
+
+
+                <div class="main_subtitle" id="segunda_forma">
+                    <h3>Segunda Forma Normal</h3>
+                </div>
+
+                <div class="main_text">
+                    <ul class="main_list">
+                        <li>
+                            Cree tablas independientes para conjuntos de valores que se apliquen a varios registros.
+                        </li>
+                        <li>
+                            Relacione estas tablas con una clave externa. 
+                        </li>
+                    </ul>
+                    <p>Los registros no deben depender de nada que no sea una clave principal de una tabla, una clave compuesta si es necesario. Por ejemplo, considere la dirección de un cliente en un sistema de contabilidad. La dirección se necesita en la tabla Clientes, pero también en las tablas Pedidos, Envíos, Facturas, Cuentas por cobrar y Colecciones. En lugar de almacenar la dirección de un cliente como una entrada independiente en cada una de estas tablas, almacénela en un lugar, ya sea en la tabla Clientes o en una tabla Direcciones independiente. 
+                    </p>
+                </div>
+
+
+                <div class="main_subtitle" id="tercer_forma">
+                    <h3>Tercera Forma Normal</h3>
+                </div>
+                <div class="main_text">
+                    <ul class="main_list">
+                        <li>
+                            Elimine los campos que no dependan de la clave. 
+                        </li>
+                    </ul>
+                    <p>Los valores de un registro que no sean parte de la clave de ese registro no pertenecen a la tabla. En general, siempre que el contenido de un grupo de campos pueda aplicarse a más de un único registro de la tabla, considere colocar estos campos en una tabla independiente. </p>
+                    <p>Por ejemplo, en una tabla Contratación de empleados, puede incluirse el nombre de la universidad y la dirección de un candidato. Pero necesita una lista completa de universidades para enviar mensajes de correo electrónico en grupo. Si la información de las universidades se almacena en la tabla Candidatos, no hay forma de enumerar las universidades que no tengan candidatos en ese momento. Cree una tabla Universidades independiente y vincúlela a la tabla Candidatos con el código de universidad como clave.</p>
+                </div>
+            </div>
+            
+            <div class="main_title" id="tipo_dato">
+                <h2>Tipos de Datos</h2>
+            </div>
+            <div class="main_text">
+                <ul class="ul_li"><b>Cadena</b>
+                    <li>
+                        CHAR(2)
+                    </li>
+                    <li>
+                        CHAR2()
+                    </li>
+                    <li>
+                        VARCHAR(50)
+                    </li>
+                    <li>
+                        VARCHAR2(50)
+                    </li>
+                </ul>
+                <ul class="ul_li"><b>Numéricos</b>
+                    <li>
+                        TINYINT(1)
+                    </li>
+                    <li>
+                        SMALLINT(2)
+                    </li>
+                    <li>
+                        INT(4)
+                    </li>
+                    <li>
+                        BIGINT(+8)
+                    </li>
+                    <li>
+                        DECIMAL(12,2)
+                    </li>
+                    <li>
+                        FLOAT
+                    </li>
+                    <li>
+                        DOUBLE
+                    </li>
+                </ul>
+                <ul class="ul_li"><b>Fechas</b>
+                    <li>DATE</li>
+                    <li>DATETIME</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
